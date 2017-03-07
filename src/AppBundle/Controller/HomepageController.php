@@ -13,7 +13,7 @@ class HomepageController extends Controller
 	
 	public function numberAction()
 	{
-		$number = '404';
+		$number = 404;
 	
 	/*	return new Response(
 				'<html><body>Lucky number: '.$number.'</body></html>'
