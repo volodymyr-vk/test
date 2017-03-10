@@ -1,0 +1,4 @@
+services:
+#    vk_hello.example:
+#        class: VK\HelloBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
