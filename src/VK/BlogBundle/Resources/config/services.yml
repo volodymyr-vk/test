@@ -1,0 +1,4 @@
+services:
+#    vk_blog.example:
+#        class: VK\BlogBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

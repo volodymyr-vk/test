@@ -1,0 +1,7 @@
+vk_blog_post:
+    resource: "@VKBlogBundle/Resources/config/routing/post.yml"
+    prefix:   /post
+
+vk_blog_homepage:
+    path:     /
+    defaults: { _controller: VKBlogBundle:Default:index }
