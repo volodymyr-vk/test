@@ -7,7 +7,8 @@ post_show:
     path:     /{id}/show
     defaults: { _controller: "VKBlogBundle:Post:show" }
     methods:  GET
-
+    requirements:
+        id:   \d+
 post_new:
     path:     /new
     defaults: { _controller: "VKBlogBundle:Post:new" }
@@ -17,8 +18,13 @@ post_edit:
     path:     /{id}/edit
     defaults: { _controller: "VKBlogBundle:Post:edit" }
     methods:  [GET, POST]
-
+    requirements:
+        id:   \d+
+    
 post_delete:
     path:     /{id}/delete
     defaults: { _controller: "VKBlogBundle:Post:delete" }
     methods:  DELETE
+    requirements:
+        id:   \d+
+    
