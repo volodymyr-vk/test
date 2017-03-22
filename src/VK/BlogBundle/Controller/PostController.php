@@ -16,13 +16,13 @@ class PostController extends Controller
      * Lists all post entities.
      *
      */
-    public function indexAction()
+    public function listAction()
     {
         $em = $this->getDoctrine()->getManager();
 
         $posts = $em->getRepository('VKBlogBundle:Post')->findAll();
 
-        return $this->render('VKBlogBundle:Post:index.html.twig', array(
+        return $this->render('VKBlogBundle:Post:list.html.twig', array(
             'posts' => $posts,
         ));
     }

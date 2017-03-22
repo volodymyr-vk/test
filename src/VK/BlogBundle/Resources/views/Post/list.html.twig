@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'main.html.twig' %}
 
 {% block body %}
     <h1>Posts list</h1>
@@ -44,4 +44,8 @@
             <a href="{{ path('post_new') }}">Create a new post</a>
         </li>
     </ul>
+    <div>
+    	<h1>Recent Articles</h1>
+        {{ include('VKBlogBundle:Post:recentList.html.twig', { 'posts': posts }) }}
+    </div>
 {% endblock %}

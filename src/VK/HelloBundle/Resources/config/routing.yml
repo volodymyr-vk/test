@@ -1,3 +1,3 @@
 vk_hello_homepage:
     path:     /hello/{name}
-    defaults: { _controller: VKHelloBundle:Hello:index }
+    defaults: { _controller: "VKHelloBundle:Hello:index", name: User }

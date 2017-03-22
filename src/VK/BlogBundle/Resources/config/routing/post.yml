@@ -1,6 +1,6 @@
 post_index:
     path:     /
-    defaults: { _controller: "VKBlogBundle:Post:index" }
+    defaults: { _controller: "VKBlogBundle:Post:list" }
     methods:  GET
 
 post_show:

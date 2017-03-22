@@ -4,4 +4,4 @@ vk_blog_post:
 
 vk_blog_homepage:
     path:     /
-    defaults: { _controller: VKBlogBundle:Default:index }
+    defaults: { _controller: "VKBlogBundle:Homepage:index" }
