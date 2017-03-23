@@ -1,4 +1,9 @@
-{% extends 'base.html.twig' %}
+{% extends 'main.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+	<link href="{{ asset('/css/contact.css') }} " type="text/css" rel="stylesheet" />
+{% endblock %}
 
 {% block body %}
     <h1>Post</h1>
