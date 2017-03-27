@@ -1,0 +1,30 @@
+product_index:
+    path:     /
+    defaults: { _controller: "VKBlogBundle:Product:list" }
+    methods:  GET
+    
+product_show:
+    path:     /{productId}/show
+    defaults: { _controller: "VKBlogBundle:Product:show" }
+    methods:  GET
+    requirements:
+        productId:   \d+
+
+product_new:
+    path:     /new
+    defaults: { _controller: "VKBlogBundle:Product:new" }
+    methods:  [GET, POST]
+
+product_update:
+    path:     /{productId}/update
+    defaults: { _controller: "VKBlogBundle:Product:update" }
+    methods:  [GET, POST]
+    requirements:
+        productId:   \d+
+
+product_delete:
+    path:     /{productId}/delete
+    defaults: { _controller: "VKBlogBundle:Product:delete" }
+    methods:  [GET, POST]
+    requirements:
+        productId:   \d+

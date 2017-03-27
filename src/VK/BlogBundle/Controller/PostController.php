@@ -22,9 +22,7 @@ class PostController extends Controller
 
         $posts = $em->getRepository('VKBlogBundle:Post')->findAll();
 
-        return $this->render('VKBlogBundle:Post:list.html.twig', array(
-            'posts' => $posts,
-        ));
+        return $this->render('VKBlogBundle:Post:list.html.twig', array('posts' => $posts,));
     }
 
     /**

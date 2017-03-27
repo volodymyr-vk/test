@@ -2,6 +2,10 @@ vk_blog_post:
     resource: "@VKBlogBundle/Resources/config/routing/post.yml"
     prefix:   /post
 
+vk_blog_product:
+    resource: "@VKBlogBundle/Resources/config/routing/product.yml"
+    prefix:   /product
+
 vk_blog_homepage:
     path:     /
     defaults: { _controller: "VKBlogBundle:Homepage:index" }
